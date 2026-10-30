@@ -13,11 +13,12 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: #34495e;
+    background: #34495e;
     color: white;
     text-align: center;
     padding: 15px;
     z-index: 1000;
+    margin: 0;
 }
 
 /* Menu lateral */
@@ -72,4 +73,74 @@ section {
     font-size: 24px;
     cursor: pointer;
     z-index: 2000;
+}
+
+@media screen and (max-width: 430px) {
+
+    /* Cabeçalho */
+    header {
+        padding: 15px 10px;
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    /* Menu */
+    .menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .menu h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .menu a {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Conteúdo principal */
+    main {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* Seções */
+    section {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    section h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Botão voltar ao topo */
+    .botao {
+        width: 45px;
+        height: 45px;
+        right: 15px;
+        bottom: 15px;
+        font-size: 20px;
+    }
+
 }
